@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 8</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      .container {
+        width: 100%;
+        margin: auto;
+        border-top: 0px;
+        border-left: 5px solid rgb(231, 223, 223);
+        border-right: 5px solid rgb(231, 223, 223);
+        border-bottom: 5px solid rgb(231, 223, 223);
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        height: 3350px;
+        background-color: rgb(240, 247, 248);
+      }
+      #header{
+        width: 100%;
+        height:60px;
+        text-align: center;
+        margin-bottom: 5px;
+        color: white;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+      }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #111;
+        }
+      .banner {
+        height: 550px;
+        width: 100%;
+        background-image: url("../Images/banner.jpg");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        font-size: 40px;
+      }
+      #team {
+        height: 400px;
+        width: 100%;
+        margin-top: 100px;
+        
+        /* background-color: rgb(199, 211, 195); */
+      }
+      #circle1 {
+        background-image: url(../Images/person1.jpeg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        width: 230px;
+        height: 230px;
+        margin-left: 15%;
+        margin-right: 2%;
+        float: left;
+        margin-top: 10px;
+      }
+      #circle2 {
+        background-image: url(../images/person2.jpeg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        width: 230px;
+        margin-right: 2%;
+        height: 230px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      #circle3 {
+        background-image: url(../images/person3.jpeg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        width: 230px;
+        margin-right: 2%;
+        height: 230px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      #circle4 {
+        background-image: url(../images/person4.jpeg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        width: 230px;
+        margin-right: 2%;
+        height: 230px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      #content {
+        height: 650px;
+        width: 100%;
+        margin-top: 300px;
+      }
+      .left {
+        width: 50%;
+        height: 100%;
+        float: left;
+        text-align: justify;
+        font-family:Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: black;
+        overflow: hidden;
+        padding: 10px;
+      }
+      .right {
+        width: 49%;
+        height: 100%;
+        float: right;
+      }
+      .project1 {
+        width: 100%;
+        height: 31%;
+        background-image: url("../Images/a8-img1.JPG");
+        margin-bottom: 3%;
+        color: white;
+        background-position: center;
+        background-size: cover;
+      }
+      .project2 {
+        width: 100%;
+        height: 31%;
+        background-image: url("../Images/a8-img2.JPG");
+        margin-bottom: 3%;
+        color: white;
+        background-position: center;
+        background-size: cover;
+      }
+      .project3 {
+        width: 100%;
+        height: 30%;
+        background-image: url("../Images/a8-img3.JPG");
+        color: white;
+        background-position: center;
+        background-size: cover;
+      }
+      #technology {
+        height: 250px;
+        width: 100%;
+        margin-top: 300px;
+      }
+     
+      .main-container {
+        width: 100%;
+        display: flex;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-bottom: 50px;
+      }
+      .boxes {
+        border-radius: 10px 10px;
+        background-color: black;
+        color: white;
+        padding: 10px, 20px;
+        margin-right: 40px;
+      }
+      .image img {
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        border-radius: 10px 20px;
+        height: 140px;
+      }
+      .button a {
+        background-color: red;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        padding: 5px 10px;
+        border-radius: 10px 10px;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 10px;
+      }
+      .button a:hover {
+        background-color: blue;
+      }
+      #footer {
+        width: 100%;
+        height: 200px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        
+        margin-top: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <class class="header">
+       <div id="header">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#content">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#technology">Technologies</a></li>
+                <li style="float:right"><a class="active" href="#footer">Contact</a></li>
+            </ul>
+        </div>
+      </class>
+      <div class="banner"><h1>Practical-8</h1></div>
+      
+      <div id="team">
+        <h2
+        style="
+          text-align: center;
+          padding-top: 80px;
+          padding-bottom: 20px;
+          font-size: 50px;
+        "
+      >
+        Team Members
+      </h2>
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+        <div id="circle3"></div>
+        <div id="circle4"></div>
+      </div>
+      
+      <div id="content">
+        <h2
+        style="
+          text-align: center;
+          padding-top: 80px;
+          padding-bottom: 20px;
+          font-size: 50px;
+          margin-top: 20px;
+        "
+      >
+        About Us
+      </h2>
+        <div class="left">
+          <h1>About Projects</h1>
+          <br />
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          architecto veritatis nesciunt ab alias harum aspernatur illum beatae
+          rerum officiis repellendus, aliquam, velit, reprehenderit explicabo?
+          Itaque adipisci recusandae dolorem accusantium rem! Quis ex quae quo
+          quod quos enim laborum saepe, harum necessitatibus delectus, nesciunt
+          consequuntur odit facere suscipit! Soluta repellat dolores laboriosam
+          culpa eveniet, consectetur, officiis iste maxime nam illo eaque, ab
+          velit pariatur quia dolore. Dicta necessitatibus provident possimus
+          voluptatem perferendis labore dolorum at tempora doloribus. Odit
+          repudiandae sequi fugit, reiciendis voluptas eos veniam, unde harum
+          eligendi consectetur qui amet? Qui nulla, officiis optio repellendus
+          ex magni saepe! Nihil, quis! Laborum perspiciatis, quae sed corporis
+          error doloremque placeat dolor. Dolor voluptates necessitatibus
+          obcaecati amet vitae iusto, vero alias corporis rerum nihil, veniam
+          commodi quibusdam fuga totam ab quos dolores eligendi assumenda sed
+          soluta harum consequuntur possimus labore! Repellendus cupiditate
+          inventore consequuntur eveniet hic magni, illo totam mollitia veniam
+          porro sit debitis ad aut iusto quas nesciunt, dolores modi sunt sint
+          deserunt. Tenetur perspiciatis iusto hic illum architecto voluptate
+          quod adipisci. Iste cupiditate delectus excepturi eveniet rerum
+          doloremque, exercitationem dolorum quia architecto, unde hic totam
+          officia. Cupiditate, natus harum tempora officiis laboriosam modi nam
+          veritatis deserunt enim aspernatur quas. Officia officiis, optio
+          architecto tempora dolor eum itaque quo atque eligendi? Vel dicta
+          voluptatum fugiat inventore corporis, ducimus ad. Quibusdam, impedit
+          ipsum asperiores doloribus quis repellat. Fugiat vero excepturi
+          eligendi deleniti repellendus incidunt culpa ipsum, velit expedita hic
+          ab harum Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Voluptatum quis reiciendis atque hic explicabo quae, voluptates
+          accusantium unde earum porro veniam, officiis ullam doloremque
+          laboriosam voluptas natus aut? Saepe, inventore.
+        </div>
+        <div class="right">
+          <div class="project1"><h1>Project-1</h1></div>
+          <div class="project2"><h1>Project-2</h1></div>
+          <div class="project3"><h1>Project-3</h1></div>
+        </div>
+      </div>
+      
+      <div id="technology">
+        <h2
+        style="
+          text-align: center;
+          padding-top: 80px;
+          padding-bottom: 20px;
+          font-size: 50px;
+        "
+      >
+        Technology Used
+      </h2>
+        <div class="main-container">
+          <div class="boxes">
+            <div class="image">
+              <img src="../Images/p6-1.JPG" alt="" />
+            </div>
+            <h3 style="text-align: center">Introduction to HTML</h3>
+            <p style="text-align: center; padding: 5px">
+              The HyperText Markup Language, or HTML is the standard markup
+              language for documents designed to be displayed in a web browser.
+            </p>
+            <div class="button">
+              <a
+                href="A6-html.html"
+                target="_blank"
+                style="color: white; text-decoration: none"
+                >Read more</a
+              >
+            </div>
+          </div>
+          <div class="boxes">
+            <div class="image">
+              <img src="../Images/p6-2.JPG" alt="" />
+            </div>
+            <h3 style="text-align: center">Introduction to CSS</h3>
+            <p style="text-align: center; padding: 5px">
+              Cascading Style Sheets is a style sheet language used for
+              describing the presentation of a document written in a markup
+              language such as HTML.
+            </p>
+            <div class="button">
+              <a
+                href="A6-css.html"
+                target="_blank"
+                style="color: white; text-decoration: none"
+                >Read more</a
+              >
+            </div>
+          </div>
+          <div class="boxes">
+            <div class="image">
+              <img src="../Images/p6-3.JPG" alt="" />
+            </div>
+            <h3 style="text-align: center">Introduction to JavaScript</h3>
+            <p style="text-align: center; padding: 5px">
+              JavaScript often abbreviated as JS, is a programming language that
+              conforms to the ECMAScript specification.
+            </p>
+            <div class="button">
+              <a
+                href="A6-js.html"
+                target="_blank"
+                style="color: white; text-decoration: none"
+                >Read more</a
+              >
+            </div>
+          </div>
+          <div class="boxes">
+            <div class="image">
+              <img src="../Images/p6-4.JPG" />
+            </div>
+            <h3 style="text-align: center">Introduction to Bootstrap</h3>
+            <p style="text-align: center; padding: 5px">
+              Bootstrap is the most popular HTML, CSS and JavaScript framework
+              for developing a responsive and mobile friendly website.
+            </p>
+            <div class="button">
+              <a
+                href="A6-bootstrap.html"
+                target="_blank"
+                style="color: white; text-decoration: none"
+                >Read more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="footer">
+        <h2
+        style="
+          text-align: center;
+          padding-top: 40px; 
+          padding-bottom: 20px;
+          font-size: 50px;
+        "
+      >
+        Contact
+      </h2>
+        <p>
+          Website template for Practical - 8 &#169;
+          <a
+            href="https://ishunikhil.github.io/Fullstack2021-GLA/Practicals/Assignment-7.html"
+            target="_blank"
+          >
+            Nikhil Raj Singh
+          </a>
+        </p>
+        <p><a href="#">Back to top</a></p>
+      </div>
+    </div>
+  </body>
+</html>
