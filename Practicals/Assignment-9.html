@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style9.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <title>Assignment 9</title>
+    <style type="text/css">
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-padding-top: 80px;
+            scroll-behavior: smooth;
+        }
+
+        #header {
+            height: 60px;
+            margin: 0;
+            width: 100%;
+            background-color: #333;
+            position: fixed;
+            box-sizing: border-box;
+            top: 0;
+
+        }
+
+        .header-ul {
+            margin: 0;
+            padding: 0 20px;
+            float: right;
+            list-style: none;
+        }
+        .header-li {
+            list-style-type: none;
+            display: inline-block;
+            margin: 0 10px;
+            line-height: 60px;
+        }
+
+        .header-li a {
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            transition: 0.3s;
+            display: block;
+            padding: 0 20px;
+        }
+        
+      #team {
+        height: 400px;
+        width: 100%;
+        margin-top: 100px;
+        
+        /* background-color: rgb(199, 211, 195); */
+      }
+      #circle1 {
+        background-image: url("../Images/person1.jpeg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        width: 230px;
+        height: 230px;
+        margin-left: 15%;
+        margin-right: 2%;
+        float: left;
+        margin-top: 10px;
+      }
+      #circle2 {
+        background-image: url("../images/person2.jpeg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        width: 230px;
+        margin-right: 2%;
+        height: 230px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      #circle3 {
+        background-image: url("../images/person3.jpeg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        width: 230px;
+        margin-right: 2%;
+        height: 230px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      #circle4 {
+        background-image: url("../images/person4.jpeg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+        width: 230px;
+        margin-right: 2%;
+        height: 230px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+
+        #banner {
+          height: 550px;
+          width: 100%;
+          background-image: url("../Images/banner.jpg");
+          background-size: cover;
+          background-position: center;
+          color: white;
+          font-size: 40px;
+        }
+
+        #banner img {
+            width: 100%;
+        }
+
+        .show-btn, .hide-btn, #chk {
+            font-size: 30px;
+            line-height: 60px;
+            color: white;
+            display: none;
+            float: right;
+            padding-right: 20px;
+        }
+
+        .header-li a:hover {
+            background-color: #28a745;
+        }
+
+        #header h1 {
+            padding-top: 8px;
+            text-align: center;
+            color: white;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            justify-content: space-around;
+        }
+
+        .cards_item {
+            /*display: flex;*/
+            padding: 1rem;
+            justify-content: space-around;
+        }
+
+        .card_image img {
+            border-radius: 50%;
+        }
+
+        #about-us-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .tech-card {
+            border-radius: 20px;
+            background-color: #ba9dc1;
+            width: 300px;
+            height: 600px;
+
+        }
+
+        .tech-card h2 {
+            color: white;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .tech-card p {
+            color: white;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .tech-card img {
+            border-radius: 20px;
+            width: 300px;
+            height: 240px;
+        }
+
+        #main-container {
+            width: 50%;
+            background-color: #6f42c1;
+            padding: 20px;
+        }
+
+        #project-parent {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        .project img {
+            padding: 20px;
+            width: 100%;
+            height: 180px;
+        }
+
+
+        .button {
+            width: 200px;
+            height: 50px;
+            background-color: gray;
+            padding-top: 0;
+            margin-top: 30px;
+            border-radius: 15px;
+            transition-duration: 0.8s;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .read {
+            text-decoration: none;
+            color: white;
+        }
+
+        .button:hover {
+            background-color: blue;
+
+        }
+
+        .button p {
+            padding-top: 10px;
+            text-align: center;
+            font-size: 18px;
+            color:  white;
+        }
+        #section-5 h1 {
+            margin-top: 100px;
+            color: black;
+            text-align: center;
+        }
+
+
+        #footer {
+            height: 80px;
+            margin: 20px;
+            background-color: mediumpurple;
+        }
+
+        #footer p {
+            text-align: center;
+            color: white;
+            font-size: 18px;
+        }
+
+        #footer p a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #footer h1 {
+            padding-top: 8px;
+            text-align: center;
+            color: white;
+
+        }
+
+
+        @media (min-width: 835px) and (max-width: 1200px) {
+            .header-ul {
+                list-style: none;
+                float: right;
+            }
+
+            .header-li {
+                line-height: 60px;
+                display: inline-block;
+            }
+
+            #banner {
+                width: 100%;
+            }
+
+            .circular-image {
+             margin: 50px 30px;
+            }
+
+            .header-li a {
+                display: block;
+                text-decoration: none;
+                color: white;
+                padding: 0 20px;
+                font-size: 18px;
+                font-weight: normal;
+                text-transform: uppercase;
+            }
+
+            .show-btn, .hide-btn, #chk {
+                color: white;
+                display: none;
+                float: right;
+                padding-right: 20px;
+            }
+
+            .cards_item {
+                width: 25%;
+            }
+        }
+
+@media (max-width: 834px) and (min-width: 624px) {
+    #header {
+        width: 100%;
+        background-color: grey;
+        position: fixed;
+        top: 0;
+        height: 70px;
+    }
+
+    .show-btn {
+        display: block;
+    }
+
+    .header-ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #333;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.7s;
+    }
+
+    .header-li {
+        display: block;
+    }
+
+    .header-li a {
+        display: block;
+    }
+
+    #chk:checked ~ .header-ul {
+        right: 0;
+    }
+
+    .hide-btn {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+    .cards_item {
+        width: 50%;
+    }
+}
+
+@media screen  and (max-width: 625px) {
+    .show-btn {
+        display: block;
+    }
+
+    .circular-image {
+        width: 100%;
+    }
+
+    .header-ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        padding: 80px 0;
+        line-height: normal;
+        transition: 0.7s;
+    }
+
+    .header-li {
+        display: block;
+    }
+
+    .header-li a {
+        display: block;
+    }
+
+    .hide-btn {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+    #chk:checked ~ .header-ul {
+        right: 0;
+    }
+
+    .cards_item {
+        width: 100%;
+        margin-left: 80px;
+    }
+
+    #main-container {
+        width: 100%;
+    }
+
+    #project-parent {
+        width: 100%;
+    }
+
+}
+</style>
+</head>
+<body>
+<section id="header-section">
+    <div id="header">
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-btn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul class="header-ul">
+            <li class="header-li"><a href="#banner">HOME</a></li>
+            <li class="header-li"><a href="#section-2">TEAM</a></li>
+            <li class="header-li"><a href="#section-3">ABOUT US</a></li>
+            <li class="header-li"><a href="#section-4">TECHNOLOGIES</a></li>
+            <li class="header-li"><a href="#section-5">CONTACT</a></li>
+
+            <label for="chk" class="hide-btn">
+                <i class="fa fa-times"></i>
+            </label>
+        </ul>
+    </div>
+
+    <div id="banner"><h1>Practical-8</h1></div>
+      
+      <div id="team">
+        <h2
+        style="
+          text-align: center;
+          padding-top: 80px;
+          padding-bottom: 20px;
+          font-size: 50px;
+        "
+      >
+        Team Members
+      </h2>
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+        <div id="circle3"></div>
+        <div id="circle4"></div>
+      </div>
+
+    <section id="section-3">
+      <h2
+        style="
+          text-align: center;
+          padding-top: 80px;
+          padding-bottom: 20px;
+          font-size: 50px;
+          "
+        >
+        About US
+      </h2>
+    <div id="about-us-container">
+
+        <div id="main-container"><p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae cum ex libero minus, obcaecati,
+            officia placeat qui ratione recusandae totam vero voluptates! Aliquid asperiores culpa eligendi facere!
+            Aperiam
+            architecto autem cupiditate dolore eveniet illo iure iusto labore magni, modi nisi provident qui repellat
+            sed s
+            imilique sunt suscipit vitae voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusantiumbeatae
+            cum ex libero minus, obcaecati,cum ex libero minus, obcaecati,cum ex libero minus, obcaecati,cum ex libero
+            minus, obcaecati,
+            officia placeat qui ratione recusandae totam vero voluptates! Aliquid asperiores culpa eligendi facere!
+            Aperiam
+            architecto autem cupiditate dolore eveniet illo iure iusto labore magni, modi nisi provident qui repellat
+            sed s
+            imilique sunt suscipit vitae voluptatibus?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae cum ex libero minus, obcaecati,
+            officia placeat qui ratione recusandae totam vero voluptates! Aliquid asperiores culpa eligendi facere!
+            Aperiam
+            architecto autem cupiditate dolore eveniet illo iure iusto labore magni, modi nisi provident qui repellat
+            sed s
+            imilique sunt suscipit vitae voluptatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusantiumbeatae
+            cum ex libero minus, obcaecati,cum ex libero minus, obcaecati,cum ex libero minus, obcaecati,cum ex libero
+            minus, obcaecati,
+            officia placeat qui ratione recusandae totam vero voluptates! Aliquid asperiores culpa eligendi facere!
+            Aperiam
+            architecto autem cupiditate dolore eveniet illo iure iusto labore magni, modi nisi provident qui repellat
+            sed s
+            imilique sunt suscipit vitae voluptatibus?
+
+        </p></div>
+
+        <div id="project-parent">
+            <div class="project"><img src="../Images/a8-img1.JPG"></div>
+            <div class="project"><img src="../Images/a8-img2.JPG"></div>
+            <div class="project"><img src="../Images/a8-img3.JPG"></div>
+        </div>
+
+
+    </div>
+</section>
+
+<section id="section-4">
+  <h2
+    style="
+      text-align: center;
+      padding-top: 80px;
+      padding-bottom: 20px;
+      font-size: 50px;
+    "
+    >
+    TECHNOLOGIES</h2>
+    <ul class="cards">
+        <li class="cards_item">
+            <div class="card">
+                <div class="tech-card">
+                    <img src="../Images/p6-1.JPG">
+                    <h2>Introduction to HTML</h2>
+                    <p>Stands for "Hypertext Markup Language." HTML is the language used to create webpages. "Markup
+                        language" refers to the way tags are used to define the page layout and elements within the
+                        page.</p>
+                    <div class="button">
+                        <p><a class="read" href="A6-html.html">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="cards_item">
+            <div class="card">
+                <div class="tech-card">
+                    <img src="../Images/p6-2.JPG">
+                    <h2>Introduction to CSS</h2>
+                    <p>CSS describes how HTML elements are to be displayed on screen, paper, or in other media. CSS
+                        saves a lot of work. It can control the layout of multiple web pages all at once. External
+                        stylesheets are stored in CSS files.</p>
+                    <div class="button">
+                        <p><a class="read" href="A6-css.html">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="cards_item">
+            <div class="card">
+                <div class="tech-card">
+                    <img src="../Images/p6-3.JPG">
+                    <h2>Introduction to JQuery</h2>
+                    <p>jQuery is a JavaScript library that allows web developers to add extra functionality to their
+                        websites. It is open source and under the MIT license. In recent years, jQuery has become the
+                        most popular JavaScript library used in web development.</p>
+                    <div class="button">
+                        <p><a class="read" href="A6-js.html">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="cards_item">
+            <div class="card">
+                <div class="tech-card"><img src="../Images/p6-4.JPG">
+                    <h2>Introduction to Bootstrap</h2>
+                    <p>Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and
+                        mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript
+                        plugins.</p>
+                    <div class="button">
+                        <p><a class="read" href="A6-bootstrap.html">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<section id="section-5">
+    <h1 class="section-heading">Contact Us</h1>
+    <div id="footer"><h1>Footer</h1>
+        <p>
+            Website Template designed with &hearts; <a href="https://ishunikhil.github.io/Fullstack2021-GLA/Practicals/Assignment-7.html"
+            target="_blank"> Nikhil Raj Singh </a>
+        </p>
+    </div>
+</section>
+</body>
+</html>
