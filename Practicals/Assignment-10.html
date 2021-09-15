@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style10.css">
+    <title>Assignment 10</title>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    }
+
+    #header {
+    width: 100%;
+    height: 70px;
+    background-color: #8c52ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    }
+
+    #header img {
+    width: 70px;
+    height: 70px;
+    }
+
+    #header h1 {
+    color: white;
+    margin-left: 10px;
+    margin-top: 15px;
+    }
+
+    #section-1 {
+    width: 100%;
+    height: 100vh;
+    margin-top: 90px;
+    }
+
+
+    #img-container img {
+    margin: 20px auto;
+    display: block;
+    max-width: 650px;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    }
+
+    #para-container h1 {
+    text-align: center;
+    }       
+
+    #sidebar {
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    background-color: #8c52ff;
+    transition: .8s;
+    }
+
+    #sidebar-ul {
+        list-style: none;
+
+    }
+
+    .sidebar-li {
+    border-bottom: 2px solid white;
+    }
+
+    .sidebar-li a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 25px;
+    color: white;
+    transition: .5s;
+    }
+
+    span {
+    margin-left: 15px;
+    }
+
+    .sidebar-li a:hover {
+        border-left: 8px solid white;
+    }
+
+    #social-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 40px;
+    border-bottom: 2px solid white;
+    padding: 15px 25px;
+    border-top: 2px solid white;
+    margin-top: 200px;
+    }
+
+    i {
+    font-size: 30px;
+    color: white;
+    }
+
+    .show-btn, .hide-btn {
+    font-size: 30px;
+    color: white;
+    position: fixed;
+    top: 20px;
+    left: 40px;
+    transition: 0.8s;
+    }
+
+    .hide-btn {
+    opacity: 0;
+    }
+
+    #chk:checked ~ #sidebar {
+    left: 0;
+    }
+
+    #chk:checked ~ .show-btn {
+    opacity: 0;
+    }
+
+    #chk:checked ~ .hide-btn {
+    opacity: 1;
+    }
+
+    #chk:checked ~ #para-container {
+        width: 75%;
+    }
+
+    input {
+        visibility: hidden;
+    }
+
+    @media (max-width: 768px) {
+    #sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    #header img {
+        margin-left: 200px;
+    }
+
+    #logo-name {
+        visibility: hidden;
+    }
+
+    }
+    </style>
+</head>
+<body>
+<div id="header">
+    <img src="../Images/css-img.JPG">
+    <h1 id="logo-name">CSS</h1>
+</div>
+
+<div id="section-1">
+    <div id="img-container">
+        <img src="../Images/banner.jpg">
+    </div>
+    <div id="para-container">
+        <h1 id="logo-heading">Fullstack</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto blanditiis delectus dicta ducimus
+            eligendi esse similique
+            tempora vero. Animi assumenda debitis dicta ducimus eos expedita, explicabo illo illum impedit ipsam ipsum,
+            maiores minima obcaecati
+            odio qui repellendus repudiandae tempora unde vel veniam? Aliquid exercitationem explicabo inventore natus
+            optio! Ad adipisci
+            alias architecto culpa cum debitis distinctio dolor dolore eos eveniet facilis illo ipsum itaque labore
+            magnam, nemo neque placeat
+            quod quos repellat totam voluptatibus voluptatum. Aliquam, assumenda commodi dolor dolore, ea est expedita,
+            explicabo ipsa iure
+            libero magnam obcaecati porro praesentium quaerat qui quisquam ratione reiciendis rerum sapiente similique
+            sint ut vero voluptatem!
+            Cumque, quaerat vero? Architecto aut corporis dolor dolore dolorum ex exercitationem facere facilis labore
+            maxime mollitia
+            necessitatibus, nemo officiis omnis pariatur perspiciatis porro quibusdam ratione repudiandae sunt tenetur
+            totam unde veniam!
+            Adipisci aliquam amet cupiditate dolore dolorem dolorum est, exercitationem illo incidunt iure libero, nihil
+            obcaecati odit
+            perspiciatis, porro quidem similique voluptatem? Ad adipisci asperiores debitis iure molestias natus nihil
+            porro ratione sequi vero.
+            Consequatur, cumque, odio! Animi cumque, doloribus enim eum fuga iusto nesciunt quasi, quia sunt veniam
+            voluptate, voluptatem? A
+            architecto blanditiis distinctio ex ipsa, ipsam molestias natus necessitatibus, officia provident quasi quo
+            quos vel?
+        </p>
+    </div>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-btn">
+        <i class="fa fa-bars"></i>
+    </label>
+    <label for="chk" class="hide-btn">
+        <i class="fa fa-times"></i>
+    </label>
+
+    <div id="sidebar">
+        <ul id="sidebar-ul">
+            <li class="sidebar-li"><a href="#"><i class="fa fa-home"><span>Home</span></i></a></li>
+            <li class="sidebar-li"><a href="#"><i class="fa fa-user"><span>About</span></i></a></li>
+            <li class="sidebar-li"><a href="#"><i class="fa fa-tasks"><span>Services</span></i></a></li>
+            <li class="sidebar-li"><a href="#"><i class="fa fa-rss"><span>Blog</span></i></a></li>
+            <li class="sidebar-li"><a href="#"><i class="fa fa-id-card"><span>Contact</span></i></a></li>
+        </ul>
+
+        <div id="social-links">
+            <a href="#"><i class="fa fa-facebook-square"></i></a>
+            <a href="#"><i class="fa fa-youtube-square"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
