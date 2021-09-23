@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 11</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    .content{
+        background-color: rgb(255, 255, 255);
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        height: 150px;
+        line-height: 150px;
+        color: rgb(86, 86, 243);
+        width: 100%;
+    }
+    .footer{
+        background-color: black;
+        color: white;
+        width: 100%;
+        height : 100%;
+    }
+    .First{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 10px;
+        
+    }
+    .About{
+        width: 40%
+    }  
+    .First h2{
+        font-size: 18px;
+        color: lightgray;
+        text-transform: uppercase;
+    } 
+    .About p{
+        text-align: justify;
+        line-height: 24px;
+        color: gray;
+        margin-top: 10px;
+    }
+    .First ul{
+        list-style: none;    
+    }
+    .First ul li{
+        line-height: 24px;    
+    }
+    a {
+        text-decoration: none;
+        color: gray;
+    }
+    a:hover {
+        color: orange;
+    }
+    span {
+        color: gray;
+    }
+    i{
+        color: gray;
+        font-size: 20px;
+    }
+
+    .Second{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .Second p{
+        color: gray;
+        font-size: 24px;
+        padding: 0;
+    }
+    .Second a{
+        display: inline-block;
+        padding: 10px 25px;
+        color: white;
+        background-color: red;
+        margin-left: 10px;
+        border-radius: 20px;
+        font-size: 22px;
+    }
+    .Second a:hover {
+        background-color: orange;
+    }
+
+    .Third{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .Third ul{
+        list-style: none;
+        margin: 20px;
+    }
+    .Third ul li{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        padding: 20px;
+        background-color: gray;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    .Third ul li i{
+        color: white;
+        font-size: 24px;
+        line-height: 20px;
+        text-align: center; 
+    }
+    .Third ul li:nth-child(1):hover{
+        background-color: #1877F2;
+    }
+    .Third ul li:nth-child(2):hover{
+        background-color: #1DA1F2;
+    }
+    .Third ul li:nth-child(3):hover{
+        background-color: #B92B27;
+    }
+    .Third ul li:nth-child(4):hover{
+        background-color: #0A66C2;
+    }
+    .Third ul li:nth-child(5):hover{
+        background-color: #CD201F;
+    }
+
+    .Fourth{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        padding-bottom: 98px;
+    }
+    .Fourth p{
+        position: relative;
+    }
+    .Fourth p::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        background-color: yellow;
+        transition: all .3s;
+    }
+    .Fourth p:hover::after{
+        width: 100%;
+    }
+    hr{
+        opacity: 0.2;
+    }
+
+    @media (max-width: 765px){
+        .content{
+        background-color: rgb(255, 255, 255);
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        height: 150px;
+        line-height: 150px;
+        color: rgb(86, 86, 243);
+        width: 100%;
+    }
+    .footer{
+        background-color: black;
+        color: white;
+        width: 100%;
+    }
+    .First{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 30px 10px;
+        
+    }
+    .About{
+        width: 100%;
+        margin-bottom: 20px;
+    }  
+    .First h2{
+        font-size: 18px;
+        color: lightgray;
+        text-transform: uppercase;
+    } 
+    .About p{
+        text-align: justify;
+        line-height: 24px;
+        color: gray;
+        margin-top: 10px;
+    }
+    .First ul{
+        list-style: none;    
+    }
+    .First ul li{
+        line-height: 24px;    
+    }
+    a {
+        text-decoration: none;
+        color: gray;
+    }
+    a:hover {
+        color: orange;
+    }
+    span {
+        color: gray;
+    }
+    i{
+        color: gray;
+        font-size: 20px;
+    }
+
+    .Second{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .Second p{
+        color: gray;
+        font-size: 24px;
+        padding: 0;
+    }
+    .Second a{
+        display: inline-block;
+        padding: 10px 25px;
+        color: white;
+        background-color: red;
+        margin-left: 10px;
+        border-radius: 20px;
+        font-size: 22px;
+    }
+    .Second a:hover {
+        background-color: orange;
+    }
+
+    .Third{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .Third ul{
+        list-style: none;
+        margin: 20px;
+    }
+    .Third ul li{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        padding: 20px;
+        background-color: gray;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    .Third ul li i{
+        color: white;
+        font-size: 24px;
+        line-height: 20px;
+        text-align: center; 
+    }
+    .Third ul li:nth-child(1):hover{
+        background-color: #1877F2;
+    }
+    .Third ul li:nth-child(2):hover{
+        background-color: #1DA1F2;
+    }
+    .Third ul li:nth-child(3):hover{
+        background-color: #B92B27;
+    }
+    .Third ul li:nth-child(4):hover{
+        background-color: #0A66C2;
+    }
+    .Third ul li:nth-child(5):hover{
+        background-color: #CD201F;
+    }
+
+    .Fourth{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+    .Fourth p{
+        position: relative;
+    }
+    .Fourth p::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        background-color: yellow;
+        transition: all .3s;
+    }
+    .Fourth p:hover::after{
+        width: 100%;
+    }
+    hr{
+        opacity: 0.2;
+    }   
+    }
+
+    @media (max-width: 500px){
+        .content{
+        background-color: rgb(255, 255, 255);
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        height: 150px;
+        line-height: 150px;
+        color: rgb(86, 86, 243);
+        width: 100%;
+    }
+    .footer{
+        background-color: black;
+        color: white;
+        width: 100%;
+    }
+    .First{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 30px 10px;
+        margin-top: 20px;
+    }
+    .About{
+        width: 100%
+    }  
+    .First h2{
+        font-size: 18px;
+        color: lightgray;
+        text-transform: uppercase;
+    } 
+    .About p{
+        text-align: justify;
+        line-height: 24px;
+        color: gray;
+        margin-top: 10px;
+    }
+    .First ul{
+        list-style: none;    
+    }
+    .First ul li{
+        line-height: 24px;    
+    }
+    a {
+        text-decoration: none;
+        color: gray;
+    }
+    a:hover {
+        color: orange;
+    }
+    span {
+        color: gray;
+    }
+    i{
+        color: gray;
+        font-size: 20px;
+    }
+
+    .Second{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .Second p{
+        color: gray;
+        font-size: 24px;
+        padding: 0;
+    }
+    .Second a{
+        display: inline-block;
+        padding: 10px 25px;
+        color: white;
+        background-color: red;
+        margin-left: 10px;
+        border-radius: 20px;
+        font-size: 22px;
+    }
+    .Second a:hover {
+        background-color: orange;
+    }
+
+    .Third{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .Third ul{
+        list-style: none;
+        margin: 20px;
+    }
+    .Third ul li{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        background-color: gray;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .Third ul li i{
+        color: white;
+        font-size: 24px;
+        line-height: 20px;
+        text-align: center; 
+    }
+    .Third ul li:nth-child(1):hover{
+        background-color: #1877F2;
+    }
+    .Third ul li:nth-child(2):hover{
+        background-color: #1DA1F2;
+    }
+    .Third ul li:nth-child(3):hover{
+        background-color: #B92B27;
+    }
+    .Third ul li:nth-child(4):hover{
+        background-color: #0A66C2;
+    }
+    .Third ul li:nth-child(5):hover{
+        background-color: #CD201F;
+    }
+
+    .Fourth{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+    .Fourth p{
+        position: relative;
+    }
+    .Fourth p::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        background-color: yellow;
+        transition: all .3s;
+    }
+    .Fourth p:hover::after{
+        width: 100%;
+    }
+    hr{
+        opacity: 0.2;
+    }
+    }
+</style>
+<body>
+    <section class="container">
+        <section class="content">Content Area</section>
+        <section class="footer">
+            <section class="First"> 
+                <section class="About">
+                    <h2>About</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste sapiente laboriosam ea quas debitis distinctio alias in corrupti quae aspernatur autem, perferendis molestiae reprehenderit delectus natus id rem exercitationem unde voluptates ab? Dolores, cumque. A rerum in maxime, recusandae, adipisci culpa quos consequuntur eum fugit nobis accusamus consequatur quidem sed?</p>
+                </section>
+                <section class="categories">
+                    <h2>Categories</h2>
+                    <div class="list1">
+                    <ul>
+                        <li><a href="#">C</a></li>
+                        <li><a href="#">PHP</a></li>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">Android</a></li>
+                        <li><a href="#">Hybrid Apps</a></li>
+                        <li><a href="#">UI Design</a></li>
+                    </ul>
+                </div>
+                </section>
+                <section class="Quick Links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Contribute</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </section>
+                <section class="Contact Us">
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <li><i class="fa fa-home"></i><span>Gla University, Mathura</span></li>
+                        <li><i class="fa fa-envelope"></i><span>nikhil.singh3_cs19@gla.ac.in</span></li>
+                        <li><i class="fa fa-phone-square"></i><span>9997842942</span></li>
+                        <li><i class="fa fa-facebook-official"></i><span>GLAUNIVERSITY</span></li>
+                    </ul>
+                </section>
+            </section>
+            <hr width="100%" noshade> 
+            <section class="Second">
+                <p>Register for Free
+                    <a>Sign Up!</a>
+                </p>
+            </section>
+            <hr width="100%" noshade>
+            <section class="Third">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                </ul> 
+            </section>
+            <hr width="100%" noshade>
+            <section class="Fourth">
+                <p>
+                    Assignment-11 Copy Right &#169;
+                    <a href="https://ishunikhil.github.io/Fullstack2021-GLA/" target="_blank">Nikhil Raj Singh</a>
+                </p>
+            </section>
+        </section>
+    </section>
+</body>
+</html>
