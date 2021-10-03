@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 12</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    th{
+        background-color: grey;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    td{
+        text-align: center;
+        padding: 10px;
+    }
+    
+    table{
+        text-align: left;
+        line-height: 20px;
+        border-collapse: separate;
+        border-spacing: 0;
+        background-color: rgb(225, 245, 242) ;
+        border: 2px solid #34495e;
+        width: 80%;
+        margin: 20px auto;
+        border-radius: 5px;
+    }
+    
+    thead tr:first-child {
+        background: #34495e;
+        color: #fff;
+        border: none;
+        line-height: 40px;
+      }
+      thead tr th:last-child {
+        text-align: center;
+        line-height: 40px;
+      }
+      thead tr th:nth-child(3) {
+        padding-left: 20px;
+      }
+
+      th:first-child,
+      td:first-child {
+        padding: 0 15px 0 20px;
+      }
+
+      th {
+        font-weight: bold;
+      }
+
+      thead tr:last-child th {
+        border-bottom: 3px solid #ddd;
+      }
+
+      tbody tr:hover {
+        background-color: #f2f2f2;
+        cursor: default;
+      }
+
+      tbody tr:last-child td {
+        border: none;
+      }
+      tbody tr td:nth-child(1) {
+        width: 50px;
+      }
+      tbody tr td:nth-child(2) {
+        width: 500px;
+        padding-right: 10px;
+      }
+      tbody tr td:nth-child(3) {
+        padding-left: 10px;
+      }
+
+      tbody td {
+        border-bottom: 1px solid #ddd;
+        height: 50px;
+      }
+
+      td:last-child {
+        text-align: center;
+      }
+
+      .button {
+        color: #aaa;
+        cursor: pointer;
+        vertical-align: middle;
+        margin-top: -4px;
+      }
+
+      .edit:hover {
+        color: #0a79df;
+      }
+
+      .delete:hover {
+        color: #dc2a2a;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(12, 6, 6);
+      }
+      a:hover {
+        
+        color: blue;
+      }
+</style>
+<body>
+    <h1 style="text-align: center;">Fullstack Live Practical Book</h1>
+    <p style="text-align: left;">
+        <table width="1200" align="center">
+            <thread>
+                <tr>
+                    <th>#</th>
+                    <th>Practical Name</th>
+                    <th>Link</th>
+                    <th>Status</th>
+                    <th>Tools</th>
+                </tr>
+            </thread>
+            <tbody>
+    <tr>
+        <p>
+            <td>1.</td>
+            <td style="text-align: left;"> Created a Web page using: HTML Editor, Online Sandbox Environment.</td>
+            <td><a href="./Assignment-1.html" target="_blank">Assignment-1</a></td>
+            <td style="color: rgb(15, 68, 15);"><b>Checked</b></td>
+            <td>
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+            </td>
+        </p>
+    </tr>
+    <tr>
+        <p>
+            <td>2.</td>
+            <td style="text-align: left;">Created a web page showing output as Html Structure using character Entities and span Tag.</td>
+            <td><a href="./Assignment-2.html" target="_blank">Assignment-2</a></td>
+            <td style="color: rgb(15, 68, 15);"><b>Checked</b></td>
+            <td>
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+            </td>
+        </p>
+    </tr>
+    <tr>
+        <p>
+            <td>3.</td>
+            <td style="text-align: left;">Live First Web-Page on Git-Hub.</td>
+            <td><a href="./Assignment-3.html" target="_blank">Assignment-3</a></td>
+            <td style="color: rgb(15, 68, 15);"><b>Checked</b></td>
+            <td>
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+            </td>
+        </p>
+    </tr>
+    <tr>
+        <p>
+            <td>4.</td>
+            <td style="text-align: left;">Created a website having list of all practical and their individual practical Page links.</td>
+            <td><a href="#">Assignment-4</a></td>
+            <td style="color: rgb(15, 68, 15);"><b>Checked</b></td>
+            <td>
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+            </td>
+        </p>
+    </tr>
+    <tr>
+        <p>
+            <td>5.</td>
+            <td style="text-align: left;">Created a Web-Page showing the use of Image-Map in the Web Application.</td>
+            <td><a href="./Assignment-5.html" target="_blank">Assignment-5</a></td>
+            <td style="color: rgb(15, 68, 15);"><b>Checked</b></td>
+            <td>
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+            </td>
+        </p>
+    </tr>
+    <tr>
+        <p>
+            <td>6.</td>
+            <td style="text-align: left;">Created card layout using css layout properties.</td>
+            <td><a href="./Assignment-6.html" target="_blank">Assignment-6</a></td>
+            <td style="color: rgb(15, 68, 15);"><b>Checked</b></td>
+            <td>
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+            </td>
+        </p>
+    </tr>
+    <tr>
+        <p>
+            <td>7.</td>
+            <td style="text-align: left;">Created a Web Page Layout using div tags.</td>
+            <td><a href="./Assignment-7.html" target="_blank">Assignment-7</a></td>
+            <td style="color: rgb(15, 68, 15);"><b>Checked</b></td>
+            <td>
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+            </td>
+        </p>
+    </tr>
+    <tr>
+        <p>
+            <td>8.</td>
+            <td style="text-align: left;">Created a Web Page having Fixed Navigation Bar with the given content.</td>
+            <td><a href="./Assignment-8.html" target="_blank">Assignment-8</a></td>
+            <td style="color: rgb(15, 68, 15);"><b>Checked</b></td>
+            <td>
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+            </td>
+        </p>
+    </tr>
+    <tr>
+        <p>
+            <td>9.</td>
+            <td style="text-align: left;">Created a Responsive Web Layout with Responsive Navigation Bar.</td>
+            <td><a href="./Assignment-9.html" target="_blank">Assignment-9</a></td>
+            <td style="color: rgb(15, 68, 15);"><b>Checked</b></td>
+            <td>
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+            </td>
+        </p>
+    </tr>
+    <tr>
+        <p>
+            <td>10.</td>
+            <td style="text-align: left;">Created a Responsive Side-Bar Navigation Menu.</td>
+            <td><a href="./Assignment-10.html" target="_blank">Assignment-10</a></td>
+            <td style="color: rgb(15, 68, 15); ;"><b>Checked</b></td>
+            <td>
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+            </td>
+        </p>
+    </tr>
+    <tr>
+        <p>
+            <td>11.</td>
+            <td style="text-align: left;">Created a Responsive Footer Template.</td>
+            <td><a href="./Assignment-11.html" target="_blank">Assignment-11</a></td>
+            <td style="color: rgb(15, 68, 15);"><b>Checked</b></td>
+            <td>
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+            </td>
+        </p>
+    </tr>
+    <tr>
+        <p>
+            <td>12.</td>
+            <td style="text-align: left;">Created a Table that represent Live Practical Book Records .</td>
+            <td><a href="./Assignment-12.html" target="_blank">Assignment-12</a></td>
+            <td style="color: rgb(151, 24, 24);"><b>Un-Checked</b></td>
+            <td>
+                <i title="Edit" class="material-icons button edit"> edit </i>
+                <i title="Delete" class="material-icons button delete"> delete </i>
+            </td>
+        </p>
+    </tr> 
+    </p>
+</tbody>
+</table>
+</body>
+</html>
